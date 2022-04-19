@@ -3,23 +3,53 @@
     
 }
 
-
 body{
     font-weight: 100;
-    text-align: center;
     background-color: #ffffff;
     line-height: 1.4;
-
 }
-head {color: rgb(194, 142, 78); background: rgb(54, 54, 51);}
+#cabeza  {
+    text-align: center;
+}
+#cabeza a img{
+    width:5%;
+    float: right;
+    padding-right: 3%;
+    padding-top:0.5%;
+}
+header {
+    color: rgb(219, 217, 217);
+    background-color: rgb(70, 70, 70);
+    display: block;
+    width: 100vw;
+}
+.cl a{
+    color: rgb(219, 217, 217);
+}
 h1{
     align-items: center;
 }
-image{
-    align-items: center;
+.titPag{
+    text-align: center;
 }
-section{
-    line-height: 1.2;
+img{
+    align-items: center;
+    
+} 
+
+#galComp img{
+width: 300px;
+height: 150px;
+}
+
+.side p{
+    display: block;
+    padding-right: 12%;
+}
+
+.side img{
+    width:610px;
+    float: right;
 
 }
 table{
@@ -30,6 +60,7 @@ table{
     border-collapse: collapse;
     font-size: small;
 }
+
 #titulos{
     font-size: 17px;
     padding: 0px 100px;
@@ -43,4 +74,6 @@ td{
     border: 1px black solid ;
     padding: 8px;
 }
-
+footer{
+    display: block;
+}
