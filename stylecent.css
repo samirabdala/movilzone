@@ -1,6 +1,15 @@
+*{
+    font-family: Helvetica, sans-serif ;
+    
+}
+
+
 body{
+    font-weight: 100;
     text-align: center;
-    background-color: #e2e2e2;
+    background-color: #ffffff;
+    line-height: 1.4;
+
 }
 head {color: rgb(194, 142, 78); background: rgb(54, 54, 51);}
 h1{
@@ -9,7 +18,29 @@ h1{
 image{
     align-items: center;
 }
-div{
-    alin
+section{
+    line-height: 1.2;
+
+}
+table{
+    position: center;
+    background: rgb(241, 241, 241);
+    display: block;
+    margin: 50px;
+    border-collapse: collapse;
+    font-size: small;
+}
+#titulos{
+    font-size: 17px;
+    padding: 0px 100px;
+}
+th{
+    background: rgb(214, 214, 214);
+    border: 1px black solid ;
+    padding: 10px;
+}
+td{
+    border: 1px black solid ;
+    padding: 8px;
 }
 
