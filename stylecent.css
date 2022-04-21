@@ -33,11 +33,15 @@ h1{
 .titPag{
     text-align: center;
 }
-img{ 
-    
+.unindx { 
+    display: block;
+    margin: 0% auto;
 } 
 #galComp{
     padding: 10px;
+    margin: 0% auto;
+    text-align: center;
+    
 }
 #galComp img{
 width: 300px;
