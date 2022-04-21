@@ -8,8 +8,8 @@ body{
     background-color: #ffffff;
     line-height: 1.4;
 }
-#cabeza  {
-    text-align: center;
+a{
+    text-decoration: none;
 }
 #cabeza a img{
     width:5%;
@@ -17,11 +17,12 @@ body{
     padding-right: 3%;
     padding-top:0.5%;
 }
-header {
+head {
     color: rgb(219, 217, 217);
     background-color: rgb(70, 70, 70);
     display: block;
-    width: 100vw;
+    text-align: center;
+
 }
 .cl a{
     color: rgb(219, 217, 217);
@@ -32,25 +33,29 @@ h1{
 .titPag{
     text-align: center;
 }
-img{
-    align-items: center;
+img{ 
     
 } 
-
+#galComp{
+    padding: 10px;
+}
 #galComp img{
 width: 300px;
 height: 150px;
 }
-
-.side p{
-    display: block;
-    padding-right: 12%;
+.side{
+    margin-left:30px ;
+    margin-right: 30px ;
 }
-
+.side p{
+    padding-right: 43%;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
 .side img{
-    width:610px;
+    width:500px;
     float: right;
-
 }
 table{
     position: center;
@@ -75,5 +80,36 @@ td{
     padding: 8px;
 }
 footer{
-    display: block;
+    background-color: rgb(78, 78, 78);
+    color: #ffffff;
+    margin-top: 150px ;
+    margin-bottom: 0px;
+    display:block
+    
+}
+footer a{
+    color:#ffffff;
+}
+.ico{
+    float: right;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+
+.link{
+    margin-right: 100px;
+    display: inline-block ;
+    margin-left: 60px;    
+}
+.marcas{
+    display: inline-block;
+    margin-left: 70px;
+}
+.ico img{
+    width: 35px;
+    display: inline-block;
+    margin-left: 20px;
 }
