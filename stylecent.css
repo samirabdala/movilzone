@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 #cabeza{
-    background-color: #2b2a2a;
+    background-color: #5e5e5e;
 }
 #cabeza h1{
 color: #ffffff;
@@ -23,7 +23,6 @@ display: block;
 margin: 0px;
 }
 #cabeza a img{
-    background-color: #2b2a2a;
     width:5%;
     float: right;
     padding-right: 1%;
@@ -35,14 +34,13 @@ head {
     position: sticky;
 }
 .cl {
-    background-color: #2b2a2a;
+    background-color: #5e5e5e;
     text-align: center;
 padding-bottom: 20px;
 }
  .aa {
     color: rgb(219, 217, 217);
     text-decoration: overline;
-    background-color: #2b2a2a;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -123,7 +121,7 @@ td{
     padding: 8px;
 }
 footer{
-    background-color: rgb(78, 78, 78);
+    background-color: #5e5e5e;
     color: #ffffff;
     margin-top: 150px ;
     margin-bottom: 0px;
