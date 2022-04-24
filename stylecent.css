@@ -4,7 +4,7 @@
 }
 body{
     font-weight: 100;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     line-height: 1.4;
 }
 
@@ -63,16 +63,28 @@ h1{
    
 }
 hr{
-    margin-bottom: 80px;
-    margin-top: 70px;
+    margin: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .titPag{
     text-align: center;
-    background-color: #f0f0f06b;
+    background-color: #ffffff;
     margin: 0;
     padding-top: 20px ;
     padding-bottom: 10px;
     font-weight: 100;
+    border: solid 1px rgb(214, 214, 214);
+    margin-bottom: 50px;
+}
+article{
+    background: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+    
+
 }
 article p{
     text-indent: 20px;
@@ -85,6 +97,7 @@ article p{
     margin: 0% auto;
     margin-top: 50px;
 } 
+
 #galComp{
     margin: 0% auto;
     margin-top: 50px;
@@ -111,12 +124,23 @@ article p{
     text-align: center;
     line-height: 170%;
 }
-
+.eco{
+    position: relative;
+    bottom: 10px ;
+    right: 24px;
+    display: inline;
+    font-size: 22px;
+}
 .side p{
     padding-right: 43%;
     padding-left: 5px;
-    margin-top: 55px;
+    margin-top: 15px;
     padding-bottom: 10px;
+    bottom: 10px;
+    position: relative;
+    }
+    .lee{
+        font-size: 12px;;
     }
 
 .side img{
