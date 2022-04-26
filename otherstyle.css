@@ -30,7 +30,16 @@ h2{
     position: absolute;
 
 }
+a{
+    text-shadow: 0.1em 0.1em 0.1em rgba(228, 228, 228, 0.568);
 
+}
+hr{
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-color: rgba(245, 122, 51, 0.459);
+}
 .mto h2{
     top: 1780px;
     left: 200px;
@@ -43,7 +52,13 @@ h2{
     left: 200px;
     position: absolute;
 }
-
+section{
+    background: #f8f8f8;
+    margin-left: 50px;
+    margin-right:50px;
+    padding-bottom:100px ;
+    padding-top: 100px;
+}
 article a{
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
@@ -51,6 +66,8 @@ article a{
     position: absolute;    
     text-decoration: none;
     color:rgb(245, 122, 51)
+    
+
 
 }
 
@@ -114,8 +131,7 @@ margin: 0px;
 footer{
     background-color: #5e5e5e;
     color: #ffffff;
-    margin-top: 150px ;
-    margin-bottom: 0px;
+  
     display:block
     
 }
