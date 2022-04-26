@@ -5,60 +5,75 @@
     border: #d4d4d46e;
     border-style: solid;
     border-width: 1px;
-    display: block;
     margin: 0% auto;
+    display:block;   
+    margin-bottom: 40px
 }
 
 h2{
     font-family: 'Bebas Neue', cursive;
-    position: absolute;
     font-size: 200px;
-    display: inline;
-
+    display: block;
     text-shadow: 0.1em 0.1em 0.2em rgb(201, 201, 201);
 }
 
 .iphone h2{
-    bottom: 210px ;
-    left: 210px;
+    top: 480px;
+    left: 200px;
+    position: absolute;
+
 }
+
 .samsung h2{
-    bottom: 210px ;
-    left: 210px;
+    top: 1160px;
+    left: 200px;
+    position: absolute;
+
 }
+
 .mto h2{
-    bottom: 210px ;
-    left: 210px;
+    top: 1780px;
+    left: 200px;
+    position: absolute;
+
 }
+
 .xia h2{
-    bottom: 210px ;
-    left: 210px;
+    top: 2555px;
+    left: 200px;
+    position: absolute;
 }
 
 article a{
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
-    position: absolute;
-    display: inline;
-    bottom: 360px ;
-    left: -225px;
+    display: inline-block;
+    position: absolute;    
+    text-decoration: none;
+    color:rgb(245, 122, 51)
+
+}
+
+.iphone a{
+    top: 640px;
+    left: 200px;
 }
 
 .samsung a{
-    bottom: 362px ;
-    left: -370px;
+    top: 1318px;
+    left: 200px;
 }
 
 .mto a{
-bottom: 362px ;
-left: -440px;
+    top: 1940px;
+    left: 200px;
 }
 
-
-
-a{
-    text-decoration: none;
+.xia a{
+    top: 2715px;
+    left: 200px;
 }
+
 head {
     display: block;
     text-align: center;
