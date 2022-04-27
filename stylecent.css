@@ -1,6 +1,5 @@
 *{
     font-family: Helvetica, sans-serif ;
-    color: #2b2a2a;
 }
 body{
     font-weight: 100;
@@ -90,6 +89,52 @@ h1{
     border: solid 1px rgb(214, 214, 214);
     margin-bottom: 50px;
 }
+/* --------PAGINA COMPARA--------- */
+
+.pagCompara{
+    background: #ffffff;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.imagenTitulo{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.imagenTitulo img{
+    margin: 0% auto;
+    position: relative;
+    display: block;
+}
+.imagenTitulo p{
+    display: inline;
+    background-color: #1a1919cc;
+    bottom: 52px;
+    left: 83px;
+    position: relative;
+    padding: 20px;
+    padding-right: 114px;
+    padding-left: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(245, 122, 51);
+    text-align: left;
+}
+.pagCompara table{
+    line-height: 120%;
+    text-align: center justify;
+    position: center;
+    background: rgba(240, 240, 240, 0.13);
+    display: block;
+    margin: 50px;
+    border-collapse: collapse;
+    font-size: small;
+}
+.pagCompara p{
+    text-indent: 7%;
+
+}
+/* ----------------- */
 article{
     background: #ffffff;
     margin-left: 50px;
@@ -182,14 +227,7 @@ article p{
     margin-bottom: 15px;
 }
 
-table{
-    position: center;
-    background: rgb(241, 241, 241);
-    display: block;
-    margin: 50px;
-    border-collapse: collapse;
-    font-size: small;
-}
+
 
 #titulos{
     font-size: 17px;
@@ -211,6 +249,10 @@ footer{
     margin-bottom: 0px;
     display:block
     
+}
+footer h4{
+    color:#ffffff;
+
 }
 footer a{
     color:#ffffff;
