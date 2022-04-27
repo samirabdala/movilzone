@@ -49,7 +49,6 @@ margin: 0px;
 
 .linkshead {
     background-color: #5e5e5e;
-    text-align: ;
     padding-bottom: 150px;
     color: rgb(219, 217, 217);
     text-decoration: none;
@@ -107,7 +106,7 @@ h1{
 }
 .imagenTitulo p{
     display: inline;
-    background-color: #1a1919cc;
+    background-color: #1a1919b4;
     bottom: 52px;
     left: 83px;
     position: relative;
@@ -153,8 +152,38 @@ h1{
     color: rgb(245, 122, 51);
     text-align: left;
 }
+.sccion {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+.sccion img{
+    margin: 0% auto;
+    display: block;
+}
+.sccion h2{
+    color:rgb(245, 122, 51); ;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 0px;
+    font-size: 27px;
+}
 
+.sccion h3{
+    margin-bottom: 15px;
+    margin-top: 60px;
+    font-size: 30px;
+    color: #030303;
 
+}
+#tt{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 600px;
+    border-color: #030303;
+    margin-bottom: 60px;
+
+}
 /* ----------------- */
 
 article{
@@ -264,6 +293,84 @@ td{
     border: 1px black solid ;
     padding: 8px;
 }
+/*------------------Iphone------------*/
+.imgmarc{
+    width: 1435px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0% 15%;
+    margin: 0% auto;
+    display:block;   
+    margin-bottom: 30px
+}
+.iphone {
+    display: block;
+    position: relative;
+
+}
+.trece{
+    position: absolute;
+    display: block;
+    bottom: 330px;
+    left: 70px;
+    font-family: 'Bebas Neue';
+    font-size: 120px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(201, 201, 201);
+}
+.atre{
+    position: relative;
+    bottom: 425px;
+    left: 190px;
+}
+.doce{
+    position: absolute;
+    display: block;
+    bottom: 370px;
+    left: 70px;
+    font-family: 'Bebas Neue';
+    font-size: 120px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(201, 201, 201);
+}
+.adoce{
+    position: relative;
+    bottom: 465px;
+    left: 190px;
+}
+.once{
+    position: absolute;
+    display: block;
+    bottom: 70px;
+    left: 70px;
+    font-family: 'Bebas Neue';
+    font-size: 120px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(201, 201, 201);
+}
+.aolnce{
+    position: absolute;   
+    bottom: 170px;
+    left: 200px;
+}
+.iphone a{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background:rgb(255, 152, 92);
+    box-shadow: 0.2em 0.2em 0.6em rgb(201, 201, 201);
+    
+}
+
+
+
+
+
+/*------------------finalIphone------------*/
 footer{
     background-color: #5e5e5e;
     color: #ffffff;

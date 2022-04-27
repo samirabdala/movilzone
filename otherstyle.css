@@ -110,8 +110,6 @@ article a{
     position: absolute;    
     text-decoration: none;
     color:rgb(245, 122, 51)
-    
-
 
 }
 
@@ -172,25 +170,21 @@ margin: 0px;
     margin-right: 100px;
 }
 
+
 footer{
     background-color: #5e5e5e;
     color: #ffffff;
-  
+    font-family: Helvetica, sans-serif ;
     display:block
     
 }
-footer{
-    background-color: #5e5e5e;
-    color: #ffffff;
-    margin-bottom: 0px;
-    display:block
-    
-}
+
 footer a{
     color:#ffffff;
 }
 footer li{
     list-style: none;
+    
 }
 .ico{
     float: right;
