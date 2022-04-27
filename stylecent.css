@@ -135,6 +135,28 @@ h1{
 
 }
 /* ----------------- */
+
+/* --------PAGINA ECONOMICOS--------- */
+
+#itCent {
+    display: inline;
+    background-color: #1a1919a9;
+    bottom: 52px;
+    left: 83px;
+    position: relative;
+    padding: 20px;
+    padding-right: 175px;
+    padding-left: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(245, 122, 51);
+    text-align: left;
+}
+
+
+/* ----------------- */
+
 article{
     background: #ffffff;
     margin-left: 50px;
