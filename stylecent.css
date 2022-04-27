@@ -294,6 +294,16 @@ td{
     padding: 8px;
 }
 /*------------------Iphone------------*/
+.navvv {
+    padding: 39%;
+    padding-top:0px ;
+    padding-bottom: 10px;
+    background-color: #030303;
+    color: #f8f8f8;
+}
+.navvv a{
+    color: #f8f8f8;
+}
 .imgmarc{
     width: 1435px;
     height: 600px;
