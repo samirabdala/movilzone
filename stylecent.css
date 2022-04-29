@@ -133,9 +133,9 @@ h1{
     text-indent: 7%;
 
 }
-/* ----------------- */
+/* -------------------------------------------- */
 
-/* --------PAGINA ECONOMICOS--------- */
+/* --------PAGINA ECONOMICOS---------------------- */
 
 #itCent {
     display: inline;
@@ -184,7 +184,7 @@ h1{
     margin-bottom: 60px;
 
 }
-/* ----------------- */
+/* -------------------------------------- */
 
 article{
     background: #ffffff;
@@ -378,9 +378,47 @@ td{
 
 
 
-
-
 /*------------------finalIphone------------*/
+
+
+/*------------------CONTACTO------------*/
+
+.h1cont{
+ font-family: 'Bebas Neue';
+ font-size: 1050%;
+ margin: auto;
+ display: inline-block;
+}
+.divContact{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ffffff;
+    padding: 2%;
+}
+.div1con{
+    display: block;
+    text-align: justify;
+    position: relative;
+    width: 50%;
+    left: 48%;
+    bottom: 187px;
+    margin-left: 1%;
+}
+
+.hrcont{
+    outline: groove;
+    bottom: 185px;
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+
+/*------------------finalCONTACTO------------*/
+
 footer{
     background-color: #5e5e5e;
     color: #ffffff;
