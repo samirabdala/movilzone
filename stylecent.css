@@ -385,9 +385,9 @@ td{
 
 .h1cont{
  font-family: 'Bebas Neue';
- font-size: 1050%;
- margin: auto;
- display: inline-block;
+ font-size: 1060%;
+ margin:  1%;
+ display: inline;
 }
 .divContact{
     margin-left: 10%;
@@ -397,23 +397,30 @@ td{
 }
 .div1con{
     display: block;
+    font-size: 90%;
     text-align: justify;
     position: relative;
     width: 50%;
-    left: 48%;
-    bottom: 187px;
+    left: 49%;
+    bottom: 182px;
     margin-left: 1%;
 }
 
 .hrcont{
     outline: groove;
-    bottom: 185px;
+    bottom: 177px;
     border: none;
     width: 100%;
     position: relative;
 }
 
-
+form{
+    display: block;
+    background-color: #030303;
+    border-radius: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 
 
