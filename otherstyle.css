@@ -44,8 +44,8 @@ a{
 
 
 .imgmarc{
-    width: 1100px;
-    border-radius: 5%;
+    width: 83%;
+    border-radius: 25px;
     border: #d4d4d46e;
     border-style: solid;
     border-width: 1px;
@@ -80,8 +80,8 @@ section a{
 }
 hr{
     margin-bottom: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
     border-color: rgba(245, 122, 51, 0.459);
 }
 .mto h2{

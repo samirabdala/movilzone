@@ -5,16 +5,17 @@ body{
     font-weight: 100;
     background-color: #f8f8f8;
     line-height: 1.4;
-    position: absolute;
     display: inline;
-    float: left;
+    margin: 0;
+
 }
 aside{
     position: absolute;
     display: block;
     border:  1px;
     background-color: #ffffff;
-    padding: 1030px 100px;
+    width: 19%;
+    height: 79.8%;
     right: 10px;
     top: 300px ;
     background-color: #ffffff;
@@ -29,6 +30,7 @@ head {
 }
 #cabeza{
     background-color: #5e5e5e;
+    z-index: 2;
 }
 #cabeza h1{
 color: #ffffff;
@@ -39,12 +41,16 @@ display: inline;
 position: relative;
 float: right;
 margin: 0px;
+z-index: 2;
+
 }
 #cabeza a img{
     width:5%;
     float: right;
     padding-right: 1%;
     padding-top:2%;
+    z-index: 3;
+
 }
 
 .linkshead {
@@ -184,6 +190,38 @@ h1{
     margin-bottom: 60px;
 
 }
+/* -------------------------------------- */
+/* -------------modelos Iphone-------------- */
+
+#modelosIphone{
+    display: flex;
+    flex-direction: column;
+}
+.modelosIphone .navvv{
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    background-color: #030303d5;
+    
+}
+#imgColumna img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.modelosIphone img {
+    width: 100%;
+}
+#gift {
+    border-radius: 30px;
+    width: 80%;
+    margin: 0% auto;
+    display: block;
+
+
+}
+
+
 /* -------------------------------------- */
 
 article{
