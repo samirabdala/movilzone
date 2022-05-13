@@ -42,7 +42,9 @@ a{
     color:rgb(245, 122, 51)
 }
 
-
+body{
+    margin: 0%;
+}
 .imgmarc{
     width: 83%;
     border-radius: 25px;
@@ -51,7 +53,9 @@ a{
     border-width: 1px;
     margin: 0% auto;
     display:block;   
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    max-width: -webkit-fill-available;
+
 }
 
 h2{
