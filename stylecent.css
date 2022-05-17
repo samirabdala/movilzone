@@ -21,7 +21,6 @@ aside{
 aside div{
     margin-bottom: 3%;
     background-color: #ffffff;
-    border-radius: 10px;
     padding-top: 4%;
 }
 .publicidad{
@@ -39,20 +38,19 @@ aside img{
     width: 95%;
     margin: 0% auto;
     display: block;
-    border-radius: 10px;
 
 }
 aside h4{
     color:rgb(245, 122, 51);
     margin-top: 1%;
     margin-bottom: 0%;
-    margin-left: 3%;
+    margin-left: 4%;
     margin-right: 3%;
 }
 aside h3{
     margin-top: 0%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
     color: #030303;
 }
 a{
@@ -129,6 +127,7 @@ h1{
     border: solid 1px rgb(214, 214, 214);
     margin-bottom: 3.5%;
 }
+
 /* --------PAGINA COMPARA--------- */
 
 .pagCompara{
@@ -137,28 +136,24 @@ h1{
     margin-right: 80px;
 }
 .imagenTitulo{
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
 }
 .imagenTitulo img{
     margin: 0% auto;
-    position: relative;
-    display: block;
+    width: 80%;
+    height: auto;
 }
-.imagenTitulo p{
-    display: inline;
-    background-color: #1a1919b4;
-    bottom: 52px;
-    left: 83px;
-    position: relative;
-    padding: 20px;
-    padding-right: 114px;
-    padding-left: 10px;
-    font-family: Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 900;
+#itCent {
+    background-color: #1a1919a9; 
     color: rgb(245, 122, 51);
-    text-align: left;
+    margin:0 auto;
+    width: 80%;
+    font-size: 3vw;
+    position: relative;
+    bottom: 4.2vw;
+    backdrop-filter: blur(10px);
 }
 .pagCompara table{
     line-height: 120%;
@@ -166,9 +161,10 @@ h1{
     position: center;
     background: rgba(240, 240, 240, 0.13);
     display: block;
-    margin: 50px;
+    margin: 5%;
     border-collapse: collapse;
     font-size: small;
+    overflow: scroll;
 }
 .pagCompara p{
     text-indent: 7%;
@@ -178,21 +174,7 @@ h1{
 
 /* --------PAGINA ECONOMICOS---------------------- */
 
-#itCent {
-    display: inline;
-    background-color: #1a1919a9;
-    bottom: 52px;
-    left: 83px;
-    position: relative;
-    padding: 20px;
-    padding-right: 175px;
-    padding-left: 10px;
-    font-family: Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 900;
-    color: rgb(245, 122, 51);
-    text-align: left;
-}
+
 .sccion {
     margin-left: 50px;
     margin-right: 50px;
@@ -201,6 +183,7 @@ h1{
 .sccion img{
     margin: 0% auto;
     display: block;
+    width: 80%;
 }
 .sccion h2{
     color:rgb(245, 122, 51); ;
@@ -266,7 +249,7 @@ article{
     padding-top: 30px ;
     padding-bottom: 30px ;
     line-height: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-bottom:15px ;
 
 }
@@ -283,8 +266,8 @@ article p{
 .unindx { 
     display: block;
     margin: 0% auto;
-    margin-top: 50px;
-    border-radius: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
     width: 80%;
 } 
 .compa{
@@ -353,7 +336,7 @@ article p{
 .side img{
     width:70%;
     float: right;
-    border-radius: 50px;
+    border-radius: 10px;
     position: relative;
     display: inline-block;
     margin-left: 25px;

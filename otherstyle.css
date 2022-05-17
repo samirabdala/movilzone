@@ -46,67 +46,42 @@ body{
     margin: 0%;
 }
 .imgmarc{
-    width: 83%;
+    width: 90%;
+    height: 100%;
     border-radius: 25px;
     border: #d4d4d46e;
     border-style: solid;
     border-width: 1px;
     margin: 0% auto;
-    display:block;   
-    margin-bottom: 40px;
-    max-width: -webkit-fill-available;
-
-}
-
-h2{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 200px;
     display: block;
-    text-shadow: 0.1em 0.1em 0.2em rgb(201, 201, 201);
-}
-
-.iphone h2{
-    top: 480px;
-    left: 200px;
-    position: absolute;
-
-}
-
-.samsung h2{
-    top: 1160px;
-    left: 200px;
-    position: absolute;
-
+    object-fit: cover;
 }
 section a{
     text-shadow: 0.1em 0.1em 0.1em rgba(228, 228, 228, 0.568);
-
 }
 hr{
-    margin-bottom: 40px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     margin-left: 250px;
     margin-right: 250px;
     border-color: rgba(245, 122, 51, 0.459);
 }
-.mto h2{
-    top: 1780px;
-    left: 200px;
-    position: absolute;
-
+h2{
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 0.1em 0.1em 0.2em rgb(201, 201, 201);
 }
 
-.xia h2{
-    top: 2555px;
-    left: 200px;
-    position: absolute;
-}
-section{
+
+.marcass{
     background: #f8f8f8;
-    margin-left: 50px;
-    margin-right:50px;
-    padding-bottom:100px ;
+    margin-left:3%;
+    margin-right:3%;
+    padding-bottom:7% ;
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
+
 article a{
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
@@ -116,25 +91,26 @@ article a{
     color:rgb(245, 122, 51)
 
 }
-
-.iphone a{
-    top: 640px;
-    left: 200px;
+.marcass a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3vw;
+    position: relative;    
+    text-decoration: none;
+    top: -84%;
+    left: 10%;
+    color:rgb(245, 122, 51)
+}
+.marcass h2{
+    position: relative;
+    margin: 0%;
+    display: table;
+    font-size: 14vw;
+    top: -42%;
+    left: 10%;
 }
 
-.samsung a{
-    top: 1318px;
-    left: 200px;
-}
-
-.mto a{
-    top: 1940px;
-    left: 200px;
-}
-
-.xia a{
-    top: 2715px;
-    left: 200px;
+.marcass div{
+    height: 42vw;
 }
 
 head {
@@ -163,7 +139,6 @@ margin: 0px;
 
 .linkshead {
     background-color: #5e5e5e;
-    text-align: ;
     padding-bottom: 150px;
     color: rgb(219, 217, 217);
     text-decoration: none;
