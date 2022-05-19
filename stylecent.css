@@ -57,14 +57,82 @@ a{
     text-decoration: none;
     color:rgb(245, 122, 51)
 }
-head {
-    display: block;
+
+header{
+    /* background: -webkit-gradient(linear,left top,right top,from(#EB9812),color-stop(85.42%,#FE6F28),to(#000)); */
+    display: flex;
+    flex-direction: column;
+    height: 9vw;
+    background: #5e5e5e;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.logo {
+    display: flex;
+    position: relative;
+    width: 96%;
+    flex-direction: row-reverse;
+}
+nav{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    left: 2%;
+    bottom: 1vw;
+
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+header nav a:hover {
+	background:#f56f3a;
+	border-radius:50px;
+}
+/* nav a{
+    margin-right: 15%;
+    margin-left: 4%;
+} */
+
+.logo a{
+    text-decoration: none;
+    color: rgb(245, 122, 51);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.logo a img {
+    width: 10%;
+    position: relative;
+    height: 72%;
+    top: 15%;
+    display: flex;
+}
+.logo img{
+    width: 5%;
+}
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+/* head {
+    display: flex;
+    flex-direction: row;
     text-align: center;
-}
-#cabeza{
     background-color: #5e5e5e;
-    z-index: 2;
+
 }
+
 #cabeza h1{
 color: #ffffff;
 text-align: right;
@@ -87,7 +155,6 @@ z-index: 2;
 }
 
 .linkshead {
-    background-color: #5e5e5e;
     padding-bottom: 150px;
     color: rgb(219, 217, 217);
     text-decoration: none;
@@ -96,7 +163,7 @@ z-index: 2;
  .linkshead .ahead {
     margin-left: 100px;
     margin-right: 100px;
-}
+} */
 
 h1{
     align-items: center;
@@ -135,6 +202,21 @@ h1{
     margin-left: 80px;
     margin-right: 80px;
 }
+.imagenTitulo p {
+    background-color: #1a1919a9;
+    color: rgb(245, 122, 51);
+    margin: 0 auto;
+    width: 80%;
+    font-size: 3vw;
+    position: relative;
+    bottom: 4.1vw;
+    text-indent: 0%;
+    backdrop-filter: blur(4px);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-indent: 0.7vw;
+}
+
 .imagenTitulo{
     display: flex;
     flex-direction: column;
@@ -154,6 +236,7 @@ h1{
     position: relative;
     bottom: 4.2vw;
     backdrop-filter: blur(10px);
+    padding: 0%;
 }
 .pagCompara table{
     line-height: 120%;
@@ -166,10 +249,7 @@ h1{
     font-size: small;
     overflow: scroll;
 }
-.pagCompara p{
-    text-indent: 7%;
 
-}
 /* -------------------------------------------- */
 
 /* --------PAGINA ECONOMICOS---------------------- */
@@ -291,14 +371,17 @@ article p{
 #galComp{
     display: flex;
     margin-top: 40px;
-    padding-right: 3%;
+    width: 60%;
+    height: fit-content;
 
 }
 
-#galComp img{
-    margin: 10px;
-    width: 250px;
-    height: 150px;
+#galComp div img{
+    margin: -1%;
+    width: 19vw;
+    margin-right: 1vw;
+    height: 11vw;
+    object-fit: cover;
     border-radius: 30px;
     border: solid 1px rgba(170, 170, 170, 0.123);
     flex-direction: row;
