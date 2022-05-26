@@ -6,8 +6,8 @@
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
             </style>
         <LINK REL=StyleSheet HREF="stylecent.css" TYPE="text/css" MEDIA=screen>
-        <div id="cabeza">
-            <a href="index.html"><img src="https://pngimage.net/wp-content/uploads/2018/05/celular-icono-png-9.png"><h1>MOVILZONE</h1></a> 
+        <div id="cabeza"
+            <a href="index.html"> <img src="https://pngimage.net/wp-content/uploads/2018/05/celular-icono-png-9.png"><h1>MOVILZONE</h1></a> 
         </div>
         <nav class="linkshead">
             <a class="ahead" href="index.html">Inicio</a>
@@ -26,18 +26,31 @@
             </div>
             <hr class="hrcont">
             <div>
-                <form action="">
-                    <label for="fname">Nombre y Apellido:</label><br>
-                    <input type="text" id="fname" name="fname" required value="Juan Lopez"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="mensaje">Mensaje:</label>
+                <form onsubmit="return carga()">
+                    <label for="fname">Nombre y Apellido:</label>
+                    <input type="text" id="fname" name="fname" >
+                    <label for="femail">Email:</label>
+                    <input type="email" id="femail" name="femail" required>
+                    <label for="fmensaje">Mensaje:</label>
                     <textarea name="" id="" cols="30" rows="10" required></textarea>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
         </div>
+
+        <script>
+        function carga(){
+            alert("Datos cargados")
+            return false;
+        }
+        function validate(){
+            let fname = document.getElementById("fname");
+        }
+    </script>
     </body>
+
+    
+
     <footer>
         <div class="link"><h4>Links</h4>
             <ul>

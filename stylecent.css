@@ -8,7 +8,7 @@ body{
     margin: 0;
 
 }
-
+/*----------------------------------*/
 aside{
     display: flex;
     position: absolute;
@@ -62,23 +62,25 @@ header{
     /* background: -webkit-gradient(linear,left top,right top,from(#EB9812),color-stop(85.42%,#FE6F28),to(#000)); */
     display: flex;
     flex-direction: column;
-    height: 9vw;
     background: #5e5e5e;
     width: 100%;
-    overflow: hidden;
-    margin-bottom: 20px;
 }
-.logo {
+
+
+#cabeza {
     display: flex;
+    left: 83%;
     position: relative;
-    width: 96%;
-    flex-direction: row-reverse;
+    /* margin-right: 20%; */
+    /* padding: 0px; */
+    width: 17vw;
 }
+
+
 nav{
     display: flex;
     position: relative;
     flex-direction: row;
-    left: 2%;
     bottom: 1vw;
 
 }
@@ -96,35 +98,15 @@ header nav a {
 }
 header nav a:hover {
 	background:#f56f3a;
-	border-radius:50px;
+	border-radius:540px;
 }
-/* nav a{
-    margin-right: 15%;
+ nav a{
+    margin-right: 10%;
     margin-left: 4%;
-} */
+ }
 
-.logo a{
-    text-decoration: none;
-    color: rgb(245, 122, 51);
-    display: flex;
-    flex-direction: row-reverse;
-}
-.logo a img {
-    width: 10%;
-    position: relative;
-    height: 72%;
-    top: 15%;
-    display: flex;
-}
-.logo img{
-    width: 5%;
-}
-.wrapper {
-	width:90%; /* Establecemos que el ancho sera del 90% */
-	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-	margin:auto; /* Centramos los elementos */
-	overflow:hidden; /* Eliminamos errores de float */
-}
+
+
 /* head {
     display: flex;
     flex-direction: row;
@@ -132,28 +114,25 @@ header nav a:hover {
     background-color: #5e5e5e;
 
 }
-
+*/
 #cabeza h1{
 color: #ffffff;
 text-align: right;
-padding: 20px;
-padding-top: 3%;
 display: inline;
 position: relative;
 float: right;
-margin: 0px;
+margin-top: 4%;
 z-index: 2;
 
 }
 #cabeza a img{
-    width:5%;
+    width:50px;
     float: right;
-    padding-right: 1%;
-    padding-top:2%;
+    margin-top: 1%;
     z-index: 3;
 
 }
-
+/*
 .linkshead {
     padding-bottom: 150px;
     color: rgb(219, 217, 217);
@@ -565,11 +544,18 @@ td{
 }
 
 form{
-    display: block;
-    background-color: #030303;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255, 152, 92);
     border-radius: 15px;
     margin-left: 10%;
     margin-right: 10%;
+    position: relative;
+    bottom: 8vw;
+    padding: 5vw;
+}
+label{
+    color: white;
 }
 
 
