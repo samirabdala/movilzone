@@ -2,41 +2,54 @@
 *{
     font-family: Helvetica, sans-serif ;
 }
-head {
-    display: block;
-    text-align: center;
-}
-#cabeza{
-    background-color: #5e5e5e;
-}
-#cabeza h1{
-color: #ffffff;
-text-align: right;
-padding: 20px;
-padding-top: 3%;
-display: inline;
-position: relative;
-float: right;
-margin: 0px;
-}
-#cabeza a img{
-    width:5%;
-    float: right;
-    padding-right: 1%;
-    padding-top:2%;
+header{
+    display: flex;
+    flex-direction: column;
+    background-image:url(head.png) ;
+    width: 100%;
 }
 
-.linkshead {
-    background-color: #5e5e5e;
-    padding-bottom: 150px;
-    color: rgb(219, 217, 217);
-    text-decoration: none;
-    
+nav{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    bottom: -7vw;
+    margin-bottom: 7.5vw;
+
 }
- .linkshead .ahead {
-    margin-left: 100px;
-    margin-right: 100px;
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:7px 17px;
+	line-height:normal;
+	font-size:22px;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+	position:relative;
+	bottom:0.5vw;
 }
+header nav a:hover {
+	background:#f8f8f82b;
+	border-radius:300px;
+	box-shadow: 0.1em 0.1em 0.1em rgb(76 76 76 / 67%);
+}
+ nav a{
+    margin-right: 10%;
+    margin-left: 4%;
+ }
+
+
+#cabeza a img{
+    width:50px;
+    float: right;
+    margin-top: 1%;
+    z-index: 3;
+
+}
+
 a{
     text-decoration: none;
     color:rgb(245, 122, 51)
@@ -111,42 +124,6 @@ article a{
 
 .marcass div{
     height: 42vw;
-}
-
-head {
-    display: block;
-    text-align: center;
-}
-#cabeza{
-    background-color: #5e5e5e;
-}
-#cabeza h1{
-color: #ffffff;
-text-align: right;
-padding: 20px;
-padding-top: 3%;
-display: inline;
-position: relative;
-float: right;
-margin: 0px;
-}
-#cabeza a img{
-    width:5%;
-    float: right;
-    padding-right: 1%;
-    padding-top:2%;
-}
-
-.linkshead {
-    background-color: #5e5e5e;
-    padding-bottom: 150px;
-    color: rgb(219, 217, 217);
-    text-decoration: none;
-    
-}
- .linkshead .ahead {
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 

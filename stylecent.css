@@ -55,66 +55,50 @@ aside h3{
 }
 a{
     text-decoration: none;
-    color:rgb(245, 122, 51)
+    color:#2c58fb;
 }
 
 header{
-    /* background: -webkit-gradient(linear,left top,right top,from(#EB9812),color-stop(85.42%,#FE6F28),to(#000)); */
     display: flex;
     flex-direction: column;
-    background: #5e5e5e;
+    background-image:url(head.png) ;
     width: 100%;
+    box-shadow: 0px 3px 13px 4px rgb(146 146 146 / 20%), 0px 2px 0px 0px rgb(0 0 0 / 4%), 0px 1px 8px 0px rgb(0 0 0 / 86%);
 }
-
-
-#cabeza {
-    display: flex;
-    left: 83%;
-    position: relative;
-    /* margin-right: 20%; */
-    /* padding: 0px; */
-    width: 17vw;
-}
-
 
 nav{
     display: flex;
     position: relative;
     flex-direction: row;
-    bottom: 1vw;
+    bottom: -7vw;
+    margin-bottom: 7.5vw;
 
 }
+
 header nav a {
 	display:inline-block;
 	color:#fff;
 	text-decoration:none;
-	padding:10px 20px;
+	padding:7px 17px;
 	line-height:normal;
-	font-size:20px;
-	font-weight:bold;
+	font-size:22px;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
+	position:relative;
+	bottom:0.5vw;
 }
 header nav a:hover {
-	background:#f56f3a;
-	border-radius:540px;
+	background:#f8f8f82b;
+	border-radius:300px;
+	box-shadow: 0.1em 0.1em 0.1em rgb(76 76 76 / 67%);
+    
 }
  nav a{
     margin-right: 10%;
     margin-left: 4%;
  }
 
-
-
-/* head {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    background-color: #5e5e5e;
-
-}
-*/
 #cabeza h1{
 color: #ffffff;
 text-align: right;
@@ -132,17 +116,6 @@ z-index: 2;
     z-index: 3;
 
 }
-/*
-.linkshead {
-    padding-bottom: 150px;
-    color: rgb(219, 217, 217);
-    text-decoration: none;
-    
-}
- .linkshead .ahead {
-    margin-left: 100px;
-    margin-right: 100px;
-} */
 
 h1{
     align-items: center;
@@ -157,10 +130,10 @@ h1{
     padding-bottom: 1%;
     padding-top: 1%;
     text-align: left;
-    margin-left: 50px ;
-    color: rgb(245, 122, 51);
-    font-size: 30px;
-    font-family:  sans-serif;
+    margin-left: 50px;
+    color: rgb(115 112 111);
+    font-size: 2.5vw;
+    font-family: sans-serif;
 }
 
 .titPag{
@@ -172,6 +145,7 @@ h1{
     font-weight: 100;
     border: solid 1px rgb(214, 214, 214);
     margin-bottom: 3.5%;
+
 }
 
 /* --------PAGINA COMPARA--------- */
@@ -180,6 +154,7 @@ h1{
     background: #ffffff;
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: 2vw;
 }
 .imagenTitulo p {
     background-color: #1a1919a9;
@@ -513,69 +488,87 @@ td{
 /*------------------CONTACTO------------*/
 
 .h1cont{
- font-family: 'Bebas Neue';
- font-size: 1060%;
- margin:  1%;
- display: inline;
+    font-family: 'Bebas Neue';
+    font-size: 13vw;
+    margin: 3%;
+    color: white;
+    display: inline;
+    letter-spacing: 7px;
 }
 .divContact{
     margin-left: 10%;
     margin-right: 10%;
     background-color: #ffffff;
-    padding: 2%;
 }
 .div1con{
     display: block;
-    font-size: 90%;
+    font-size: 106%;
     text-align: justify;
     position: relative;
-    width: 50%;
-    left: 49%;
-    bottom: 182px;
-    margin-left: 1%;
-}
-
-.hrcont{
-    outline: groove;
-    bottom: 177px;
-    border: none;
-    width: 100%;
-    position: relative;
+    width: 91%;
+    left: 5%;
+    bottom: 17vw;
+    line-height: 2vw;
+    color: #757575;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    background-color:rgb(255, 152, 92);
-    border-radius: 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(178deg, rgb(0, 173, 235) 0.53%, rgb(99, 72, 180) 101.04%);
+    border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
     position: relative;
-    bottom: 8vw;
+    bottom: 12vw;
     padding: 5vw;
+    box-shadow: 0px 3px 13px 4px rgb(146 146 146 / 70%), 0px 2px 0px 0px rgb(0 0 0 / 24%), 0px 1px 8px 0px rgb(0 0 0 / 46%);
 }
 label{
     color: white;
 }
-
-
-
+.formm input{
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+.blockContact{
+    background-color: #030d5c;
+    margin-bottom: 20vw;
+    height: 17vw;
+    position: relative;
+}
+textarea{
+    border: none;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
 /*------------------finalCONTACTO------------*/
 
 footer{
-    background-color: #5e5e5e;
-    color: #ffffff;
+    /* background: linear-gradient(180deg, #007AE7 0%, #00C9A8 100%); */
+    background: #2b2a2a;
     margin-top: 50px ;
     margin-bottom: 0px;
-    display:block
+    display:block;
+    
+    box-shadow: 0px 4px 4px rgb(1 150 209 / 20%);
     
 }
 footer h4{
-    color:#ffffff;
+    color:#2c58fb;
 
 }
 footer a{
     color:#ffffff;
+    text-shadow: #ffffff;
 }
 footer li{
     list-style: none;
