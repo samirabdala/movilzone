@@ -491,9 +491,11 @@ td{
     font-family: 'Bebas Neue';
     font-size: 13vw;
     margin: 3%;
-    color: white;
+    color: #ffffff;
     display: inline;
     letter-spacing: 7px;
+    bottom: 1vw;
+    position: relative;
 }
 .divContact{
     margin-left: 10%;
@@ -536,7 +538,8 @@ label{
 .blockContact{
     background-color: #030d5c;
     margin-bottom: 20vw;
-    height: 17vw;
+    margin-top: 3vw;
+    height: 14vw;
     position: relative;
 }
 textarea{
