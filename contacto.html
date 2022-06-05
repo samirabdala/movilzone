@@ -4,10 +4,13 @@
     <header>
         <title>  MOVILZONE</title>
         <style>
+           
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
-        <LINK rel=StyleSheet type="text/css" href="stylecent.css">
+       
         
+        <LINK rel=StyleSheet type="text/css" href="stylecent.css">
+            <a id="aaheader" href="index.html"></a>     
         <nav class="linkshead">
             <a class="ahead" href="index.html">Inicio</a>
             <a class="ahead" href="marcas.html">Marcas</a>
@@ -29,27 +32,35 @@
             </div>
             
             <div>
-                <form class="formm" onsubmit="carga()">
+                <form id="formu"    name="formu" class="formm"  action="">
+                
                     <label for="fname">Nombre y Apellido:</label>
-                    <input type="text" id="fname" name="fname" >
+                    <input onfocus="typingname()" class="inp" type="text" id="fname" name="fname" placeholder="Patricia Alcaraz">
+                    <p  id="errname" class="pp">
+                        Ingrese su nombre y apellido.
+                    </p>
+                
                     <label for="femail">Email:</label>
-                    <input type="email" id="femail" name="femail" required>
+                    <input  onfocus="typingMail()" class="inp" type="email" id="femail" name="femail" placeholder="apatricia@mail.com" >
+                    <p id="errmail" class="pp">
+                         Ingrese su email.
+                    </p>
+
                     <label for="fmensaje">Mensaje:</label>
-                    <textarea name="" id="" cols="30" rows="10" required></textarea>
-                    <input type="submit" value="Enviar">
+                    
+                    <textarea onfocus="typingTxt()" minlength="10" class="inp ftext" name="" id="ftext" cols="30" rows="10" placeholder="Deja tu mensaje o sugerencia" ></textarea>
+                    <p id="errmsj" class="pp">
+                        Debe completar el campo, caracteres minimos 50. 
+                    </p>
+
+                    <input onfocus="envioFormulario()" type="submit" name="submt" id="submt">
+                    <p id="ok" class="pp sendok"> </p>
+
                 </form>
             </div>
         </div>
+        <script LANGUAGE="JavaScript" src="script.js"></script>
 
-        <script>
-        function carga(){
-            alert("Datos cargados")
-            return false;
-        }
-        function validate(){
-            let fname = document.getElementById("fname");
-        }
-    </script>
     </body>
 
     

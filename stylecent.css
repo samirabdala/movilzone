@@ -57,7 +57,16 @@ a{
     text-decoration: none;
     color:#2c58fb;
 }
-
+/*-------------------------- HEADER---------------------*/
+a#aaheader {
+    position: absolute;
+    /* background: beige; */
+    left: 1120px;
+    top: 2vw;
+    z-index: 100000;
+    color: #f5deb300;
+    padding: 20px 140px;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -501,6 +510,7 @@ td{
     margin-left: 10%;
     margin-right: 10%;
     background-color: #ffffff;
+    border-radius: 10px 10px 0px 0px;
 }
 .div1con{
     display: block;
@@ -527,26 +537,43 @@ form{
     box-shadow: 0px 3px 13px 4px rgb(146 146 146 / 70%), 0px 2px 0px 0px rgb(0 0 0 / 24%), 0px 1px 8px 0px rgb(0 0 0 / 46%);
 }
 label{
-    color: white;
+    color: rgb(216, 216, 215);
+    font-family: 'Bebas Neue';
+    font-size: 1.3vw;
+    letter-spacing: 2px;
 }
-.formm input{
+input, textarea{
+    position: relative;
+    margin: 0%auto;
+}
+
+.inp{
     border-radius: 5px;
-    border: none;
+    border: rgb(209, 199, 199) solid 3px;
     padding: 1%;
-    margin-bottom: 2%;
+    width: 50vw;
+
+
 }
 .blockContact{
     background-color: #030d5c;
     margin-bottom: 20vw;
-    margin-top: 3vw;
+    margin-top: 8vw;
     height: 14vw;
+    border-radius: 10px 10px 0px 0px;
     position: relative;
 }
-textarea{
-    border: none;
+.ftext{
+    border: rgb(209, 199, 199) solid 3px;
     border-radius: 5px;
+    width: 50vw;
+    padding: 7px;
 }
+
 input[type="submit"] {
+    font-family: 'Bebas Neue';
+    font-size: 1vw;
+    letter-spacing: 5px;
     margin-top: 2%;
     padding: 1%;
     border-radius: 9px;
@@ -598,4 +625,50 @@ footer li{
     width: 35px;
     display: inline-block;
     margin-left: 20px;
+}
+/*---------------SCRIPT-------------*/
+.err{
+    visibility: visible;
+    color: red;
+    display: inline;
+    position: relative;
+    height: 1.5vw;
+    margin-top: 6px;
+    letter-spacing: 1px;
+    font-size: 90%;
+    margin-left: 10px;
+}
+.errInp{
+    border-radius: 5px;
+    border: solid rgb(235, 24, 24);
+    padding: 1%;
+    width: 50vw;
+    background-color: #ffd7d7;;
+}
+.pp{
+    position: relative;
+    visibility: hidden;
+    margin-top:6px;
+    height: 1.5vw;
+    display: inline;
+    font-size: 90%;
+    letter-spacing: 1px;
+    margin-left: 10px;
+
+
+}
+.sendok{
+    visibility: visible;
+    color: rgb(0 0 0);
+    display: inline;
+    position: relative;
+    text-align: center;
+    padding: 0.4vw 1vw;
+    border-radius: 20px;
+    top: 3vw;
+    background: white;
+    border: #00b300 solid 3px;
+    letter-spacing: 1px;
+    font-size: 91%;
+    margin: 0% auto;
 }
