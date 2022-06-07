@@ -311,11 +311,15 @@ article p{
     margin: 0% auto;
     margin-top: 30px;
     border-radius: 10px;
-    width: 80%;
+    width: 65vw;
+    height: 40vw;
+    object-fit: cover;
+
 } 
 .compa{
     position: relative;
     padding-bottom:10px ;
+    
 }
 .compa > h2{
     display: flex;
@@ -544,7 +548,7 @@ label{
 }
 input, textarea{
     position: relative;
-    margin: 0%auto;
+    margin: 0% auto;
 }
 
 .inp{
@@ -574,12 +578,15 @@ input[type="submit"] {
     font-family: 'Bebas Neue';
     font-size: 1vw;
     letter-spacing: 5px;
-    margin-top: 2%;
+    margin: 2%;
     padding: 1%;
     border-radius: 9px;
     border: none;
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
+#submt:hover{
+    color: #0098ff;;
+    box-shadow: 2px 2px 9px 3px rgb(0 0 0 / 53%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)}
 /*------------------finalCONTACTO------------*/
 
 footer{
@@ -657,7 +664,10 @@ footer li{
 
 
 }
-.sendok{
+.bfSend{
+    visibility: hidden;
+}
+.sendOk{
     visibility: visible;
     color: rgb(0 0 0);
     display: inline;
@@ -671,4 +681,31 @@ footer li{
     letter-spacing: 1px;
     font-size: 91%;
     margin: 0% auto;
+}
+
+/*-------------------------- CAROUSEL---------------------- */
+
+.bot{
+    display: inline;
+    position: absolute;
+    font-size: 3.3vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.797);
+    /* border-radius: 50%; */
+    color: #ffffff;
+    /* text-align: center; */
+
+}
+.contCarr{
+    position:relative;
+}
+.backBot{
+top: 45%;
+left: 84%;
+}
+.nextBot{
+    top: 45%;
+    left: 12%;
+}
+.nextBot:hover{
+    color: #0098ff;
 }
