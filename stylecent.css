@@ -306,16 +306,7 @@ article p{
     margin-right: 50px;
     text-align: justify;
 }
-.unindx { 
-    display: block;
-    margin: 0% auto;
-    margin-top: 30px;
-    border-radius: 10px;
-    width: 65vw;
-    height: 40vw;
-    object-fit: cover;
 
-} 
 .compa{
     position: relative;
     padding-bottom:10px ;
@@ -684,28 +675,109 @@ footer li{
 }
 
 /*-------------------------- CAROUSEL---------------------- */
-
-.bot{
-    display: inline;
+/* #conteCarr{
+    position: relative;
+    overflow: hidden;
+    margin: 0% auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 65vw;
+    height: 40vw;
+    object-fit: cover;
+    
+}
+.slide{
     position: absolute;
-    font-size: 3.3vw;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.797);
-    /* border-radius: 50%; */
-    color: #ffffff;
-    /* text-align: center; */
+}
+.unindx{
+    object-fit: cover;
+}
+.bot{
+    color: rgb(15, 15, 15);
+    font-size: 3.5vw;
+    cursor: pointer;
+    z-index: 100;
+}
+.cy{
+    display: inline;
+    position: relative;
+    top: 19vw;
+    transform: translateX(-3%);
+}
+
+.cx{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
-.contCarr{
-    position:relative;
+#botPrev{
+    left: -2vw;
 }
-.backBot{
-top: 45%;
-left: 84%;
-}
-.nextBot{
-    top: 45%;
-    left: 12%;
-}
-.nextBot:hover{
-    color: #0098ff;
-}
+#botNext{
+    left: 48.5vw;
+} */
+
+
+.center_y{
+    position: relative;
+    top:46%;
+    transform: translateX(-50%);
+  }
+/*   
+  .center_x{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+  }
+   */
+  #slider-container{
+    border: 1px solid rgba(195, 195, 195, 0.42);
+    position: relative;
+    overflow: hidden;
+    margin: 0% auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 65vw;
+    height: 40vw;
+    object-fit: cover;
+  }
+  
+  .slide{
+    width: 65vw;
+    height: 40vw;
+    position: absolute;
+  }
+  
+  .slider img {
+    width: 65vw;
+    height: 40vw;
+    object-fit: cover;
+  }
+  
+  .slider-arrow{
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    text-shadow: 0em 0em 0.2em rgb(13, 12, 12);
+  }
+  
+  
+  #arrow-prev{
+    left: 20px;
+  }
+  
+  #arrow-next{
+    right: 20px;
+  }
+  
+  #slider-container img{
+      width: 65vw;
+    height: 40vw;
+    object-fit: cover;
+  }
+  .fade{
+    animation-name: fade;
+    animation-duration: 10s;
+  }

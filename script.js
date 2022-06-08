@@ -10,6 +10,7 @@
     let errmail = document.querySelector("#errmail");
     let errtxt = document.querySelector("#errmsj");
     const regExp = /[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]+(\.[a-zA-Z]+)+(\.[a-zA-Z]+)?/gi
+    const otrCarct = /[0-9\W]+/g;
     let listNode = document.querySelectorAll('.inp')
     console.log(listNode[1]);
 
@@ -56,19 +57,20 @@
     function typingname(){
         let xx = document.querySelector("#fname")
         let err = document.querySelector("#errname");
-            xx.addEventListener("keydown",(x)=>{
+            xx.addEventListener("keyup",()=>{
                 if(nombre.value.length>1){
                     err.classList.replace("err","pp")
                 }else{
                     err.classList.replace("pp","err")
-                }           
+                }     
+                      
              });
     }
     function typingMail(){
         let xx = document.querySelector("#femail")
         let err = document.querySelector("#errmail");
             
-            xx.addEventListener("keydown",(x)=>{
+            xx.addEventListener("keyup",()=>{
                 if(mail.value.length>1 && regExp.test(mail.value)){
                     err.classList.replace("err","pp")
                 }else{
@@ -80,7 +82,7 @@
         let xx = document.querySelector("#ftext")
         let err = document.querySelector("#errmsj");
         
-            xx.addEventListener("keydown",(x)=>{
+            xx.addEventListener("keyup",()=>{
                 if(msj.value.length>1){
                     err.classList.replace("err","pp")
                 }else{
