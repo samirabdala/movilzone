@@ -19,17 +19,22 @@ nav{
 }
 
 header nav a {
-	display:inline-block;
-	color:#fff;
-	text-decoration:none;
-	padding:7px 17px;
-	line-height:normal;
-	font-size:22px;
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease;
-	position:relative;
-	bottom:0.5vw;
+    font-family: 'Michroma', sans-serif;
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 7px 11px;
+    line-height: normal;
+    font-size: 14px;
+    text-decoration: overline;
+    text-transform: uppercase;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    position: relative;
+    bottom: 0.5vw;
+    margin-right: 5%;
+    margin-left: 4%;
 }
 header nav a:hover {
 	background:#f8f8f82b;
@@ -128,19 +133,24 @@ article a{
 
 
 footer{
-    background-color: #5e5e5e;
-    color: #ffffff;
-    font-family: Helvetica, sans-serif ;
-    display:block
+    background: #2b2a2a;
+    margin-top: 50px ;
+    margin-bottom: 0px;
+    display:block;
+    
+    box-shadow: 0px 4px 4px rgb(1 150 209 / 20%);
     
 }
+footer h4{
+    color:#2c58fb;
 
+}
 footer a{
     color:#ffffff;
+    text-shadow: #ffffff;
 }
 footer li{
     list-style: none;
-    
 }
 .ico{
     float: right;

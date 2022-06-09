@@ -4,11 +4,9 @@
     <header>
         <title>  MOVILZONE</title>
         <style>
-           
+            @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
-       
-        
         <LINK rel=StyleSheet type="text/css" href="stylecent.css">
             <a id="aaheader" href="index.html"></a>     
         <nav class="linkshead">
@@ -17,11 +15,10 @@
             <a class="ahead" href="contacto.html">Contacto</a>
         </nav>
     </header>
-    </head>
     <body class="contaco">
         <div class="divContact">
             <div class="blockContact">
-            <h1 class="h1cont">Contacto</h1>
+            <h1 id="h1cont">Contacto</h1>
 
         </div>
             <div class="div1con">
@@ -31,8 +28,9 @@
                 Aquí encontrás las diferentes formas de ponerte en contacto con nosotros.
             </div>
             
-            <div>
-                <form id="formu"    name="formu" class="formm"  action="">
+            <!-- <div>
+
+                <form id="formu"  name="formu" class="formm"  action="">
                 
                     <label for="fname">Nombre y Apellido:</label>
                     <input onfocus="typingname()" class="inp" type="text" id="fname" name="fname" placeholder="Patricia Alcaraz">
@@ -57,7 +55,40 @@
                     <p id="ok" class="pp bfSend"> </p>
 
                 </form>
-            </div>
+            </div> -->
+            <form class="formulario" action="">
+                <div class="nombre inp-cont">
+                    <label class="onela uno" for="fname">Nombre:</label>
+                    <input type="text" class="inp one"  name="fname" id="fname">
+                    <p class="p-name pp">
+            
+                    </p>
+                </div>
+            
+                <div class="email inp-cont">
+                    <label class="onela dos" for="femail">Email:</label>
+                    <input type="email" name="femail" class="inp two" id="femail">
+                    <p class="p-email pp">
+                        
+                    </p>
+                </div>
+            
+                <div class="edad inp-cont">
+                    <label for="ftext" class="onela tres">Mensaje:</label>
+                    <textarea minlength="10" class="inp ftext tree" name="" id="ftext" cols="30" rows="10" placeholder="Deja tu mensaje o sugerencia" ></textarea>                    
+                    <p class="p-text pp">
+
+                    </p>
+                </div>
+            
+                        <!-- BOTON -->
+                <div class="enviar inp-cont">
+                    <input onclick='val()' type="submit" id="submt">
+                    <p class="msj" id="ok">
+                    </p>
+                </div>
+            
+            </form>
         </div>
         <script LANGUAGE="JavaScript" src="script.js"></script>
 

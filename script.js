@@ -1,92 +1,119 @@
+const formu = document.querySelector('.formulario');
+let inpts = document.querySelectorAll('.inp');
+const ps = document.querySelectorAll('p')
+const la1 = document.querySelector('.uno')
+const in1 = document.querySelector('.one')
+const la2 = document.querySelector('.dos')
+const in2 = document.querySelector('.two')
+const la3 = document.querySelector('.tres')
+const in3 = document.querySelector('.tree')
 
+const regExp2 = /([^A-Za-z0-9\.@_-])+/g
+const regExp = /([a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]+(\.[a-zA-Z]+)+(\.[a-zA-Z]+)?)/gi
+const otrCarct = /[0-9\W]+/g;
+const num =/[0-9]+/
+let ox = document.createElement('h1');
+checkNomb = 0, checkMail = 0, checkTxt = 0;
+formu.addEventListener('submit',(e) => {
+    e.preventDefault();
+})
+inpts[0].addEventListener('keyup',(x) => {
+    if(otrCarct.test(inpts[0].value)){
+        ps[0].textContent = 'Ingrese un nombre valido.';
+        la1.classList.replace('onela','errLabl');
+        checkNomb = 0;
+    } else { 
+        if(!(otrCarct.test(inpts[0].value))){
+            ps[0].textContent = '';
+        la1.classList.replace('errLabl','onela');
 
+        }
+    }   
+});
 
-    const form = document.getElementById('formu');
-    const nombre = document.getElementById('fname');
-    const mail= document.getElementById('femail');
-    const msj= document.getElementById('ftext');
-    const ok = document.getElementById("ok");
-    let errnam = document.querySelector("#errname");
-    let errmail = document.querySelector("#errmail");
-    let errtxt = document.querySelector("#errmsj");
-    const regExp = /[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]+(\.[a-zA-Z]+)+(\.[a-zA-Z]+)?/gi
-    const otrCarct = /[0-9\W]+/g;
-    let listNode = document.querySelectorAll('.inp')
-    console.log(listNode[1]);
+inpts[1].addEventListener('keyup', () =>{
+    if(regExp2.test(inpts[1].value)){
+        ps[1].textContent = 'Caracter especial no valido, solo se aceptan "." "-" "_" .';
+        la2.classList.replace('onela','errLabl');
+        checkMail = 0;
+    } else {
+        if(!(regExp2.test(inpts[1].value))){
+            ps[1].textContent = '';
+            la2.classList.replace('errLabl','onela');
 
-    form.addEventListener('submit',(x)=> {
-        x.preventDefault();
-    })
+        }
+    }
+});
 
-    function envioFormulario(){
-        if (nombre.value.length < 0 || nombre.value.trim() == ''){
-            errnam.classList.replace("pp","err")
-            listNode[0].classList.replace("inp","errInp")
+function val(){
+    
+     
+    if(inpts[0].value.length == 0){
+        la1.classList.replace('onela','errLabl');        
+        ps[0].textContent = 'Debe completar este campo.';
+        in1.classList.replace('inp','errInp');       
+
+    } else {
+        if((otrCarct.test(inpts[0].value)) || (inpts[0].value.length >20 )) {
+            ps[0].textContent = 'Campo debe ser menor a 20 caracteres y solo letras. ';
+            checkNomb=0;
+            la1.classList.replace('onela','errLabl');
         } else {
-            errnam.classList.replace("err","pp")
-        }
-
-        if ((mail.value.length < 1 || mail.value.trim() == '') || regExp.test(mail.value)){
-            errmail.classList.replace("pp","err")  
-            listNode[1].classList.replace("inp","errInp")
-        }else {    
-            errmail.classList.replace("err","pp")
-        }
-
-       if (msj.value.length < 1 || msj.value.trim() == ''){            
-            errtxt.classList.replace("pp","err")    
-            listNode[2].classList.replace("ftext","errInp")
-        }else {            
-            errtxt.classList.replace("err","pp")           
-        }
-        
-        if(nombre.value != 0 && mail.value != 0 && msj.value.length >= 10 && regExp.test(mail.value)){
-            ok.innerHTML = "Gracias " + nombre.value + ". Tu formulario se envio exitosamente."
-            
-            listNode[0].classList.replace("errInp","inp")
-            listNode[1].classList.replace("errInp","inp")
-            listNode[2].classList.replace("errInp","inp")
-            form.reset();
-            ok.classList.replace("bfSend","sendOk")
-
+            checkNomb=1;
+            console.log(checkNomb)
+            la1.classList.replace('errLabl','onela');
+            in1.classList.replace('errInp','inp');       
 
         }
+    }
+    
+    if(inpts[1].value.length == 0){
+        la2.classList.replace('onela','errLabl');        
+        ps[1].textContent = 'Debe completar este campo.';
+        in2.classList.replace('inp','errInp');       
 
+    } else {
+        if(!(regExp.test(inpts[1].value)) && inpts[1].value.length > 0){
+            ps[1].textContent = 'Ingrese un mail valido'
+            checkMail=0;
+            la2.classList.replace('onela','errLabl');
+    
+        } else {
+            in2.classList.replace('errInp','inp');       
+            ps[1].textContent = '';
+            checkMail=1;
+            la2.classList.replace('errLabl','onela');
+    
+        }
+    }
+    
+    
+    if(inpts[2].value.length == 0){
+        la3.classList.replace('onela','errLabl'); 
+        ps[2].textContent = 'Debe completar este campo.';
+        in3.classList.replace('ftext','errtext');       
+
+    } else { if (inpts[2].value.length < 20) {
+                ps[2].textContent = 'El mensaje debe contener mas de 20 caracteres.';
+                checkTxt=0;
+                 la3.classList.replace('onela','errLabl');
+            } else{       
+                in3.classList.replace('errtext','ftext');       
+                ps[2].textContent = ''
+                 checkTxt=1;
+                la3.classList.replace('errLabl','onela');
+
+            }
+        }
+    if(checkNomb == 1 && (checkMail == 1 || checkMail == 2) && checkTxt == 1 ) {
+        ps[3].className.replace("msj","send-ok");
+        ps[3].appendChild(ox);
+        ox.innerHTML = 'Muchas gracias ' + inpts[0].value + ' por contactarte, pronto nos comunicaremos contigo. ';
+
+        formu.reset();
     }
 
-    function typingname(){
-        let xx = document.querySelector("#fname")
-        let err = document.querySelector("#errname");
-            xx.addEventListener("keyup",()=>{
-                if(nombre.value.length>1){
-                    err.classList.replace("err","pp")
-                }else{
-                    err.classList.replace("pp","err")
-                }     
-                      
-             });
-    }
-    function typingMail(){
-        let xx = document.querySelector("#femail")
-        let err = document.querySelector("#errmail");
-            
-            xx.addEventListener("keyup",()=>{
-                if(mail.value.length>1 && regExp.test(mail.value)){
-                    err.classList.replace("err","pp")
-                }else{
-                    err.classList.replace("pp","err")
-                }
-            });
-    }
-    function typingTxt(){
-        let xx = document.querySelector("#ftext")
-        let err = document.querySelector("#errmsj");
-        
-            xx.addEventListener("keyup",()=>{
-                if(msj.value.length>1){
-                    err.classList.replace("err","pp")
-                }else{
-                    err.classList.replace("pp","err")
-                }            
-            });
-    }
+}
+
+
+
