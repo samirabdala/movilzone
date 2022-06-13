@@ -8,9 +8,9 @@ const in2 = document.querySelector('.two')
 const la3 = document.querySelector('.tres')
 const in3 = document.querySelector('.tree')
 
-const regExp2 = /([^A-Za-z0-9\.@_-])+/g
-const regExp = /([a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]+(\.[a-zA-Z]+)+(\.[a-zA-Z]+)?)/gi
-const otrCarct = /[0-9\W]+/g;
+const regExp2 = /([^A-Za-z0-9\.@_-])+/
+const regExp = /([a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]+(\.[a-zA-Z]+)+(\.[a-zA-Z]+)?)/i
+const otrCarct = /[0-9\W]+/;
 const num =/[0-9]+/
 let ox = document.createElement('h1');
 checkNomb = 0, checkMail = 0, checkTxt = 0;
